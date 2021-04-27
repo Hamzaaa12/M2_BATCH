@@ -60,7 +60,7 @@ echo ---------------------------------------------------------------------------
 cd %homepath%/Documents
 mkdir M2_SMO_Backup_%date:~6,4%%date:~3,2%%date:~0,2%
 cd %homepath%/Desktop
-Robocopy M2-Sistemes-Operatius %homepath%/Documents/M2_SMO_Backup_%date:~6,4%%date:~3,2%%date:~0,2%  /E /SEC
+Robocopy M2-Sistemes-Operatius %homepath%/Documents/M2_SMO_Backup_%date:~6,4%%date:~3,2%%date:~0,2%  /E /SEC >> log.txt
 MSG * COPIA DE SEGURIDAD SATISFACTORIA
 pause>nul
 GOTO START
