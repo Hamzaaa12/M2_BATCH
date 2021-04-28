@@ -17,9 +17,10 @@ if %opciones%==2 GOTO Borrar-Directorios
 if %opciones%==3 GOTO Ver-Directorios
 if %opciones%==4 GOTO COPIA-DE-SEGURIDAD
 if %opciones%==s GOTO SALIR
-
+GOTO START
 
 :Crear-Directorios
+cd %homepath%/Desktop
 mkdir M2-Sistemes-Operatius
 cd M2-Sistemes-Operatius
 md UF1-Introducci-als-SMO UF2-Sistemes-Operatius-Propietaris
@@ -36,6 +37,7 @@ echo.
 GOTO START
 
 :Borrar-Directorios
+cd %homepath%/Desktop
 echo voy a borrar todo MUAHAHAH
 RD /S M2-Sistemes-Operatius
 echo ----------------------------------------------------
